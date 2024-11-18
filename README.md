@@ -9,7 +9,7 @@ A beginner-friendly repository to learn the fundamentals of Bitcoin and blockcha
   - Basics of cryptographic keys and signatures.  
 
 - **Practical Applications**:  
-  - Build a simple blockchain in Python or JavaScript.  
+  - Principles of Bitcoin (Golang)
   - Simulate transactions with digital signatures.  
   - Explore hash functions and proof-of-work algorithms.  
 
