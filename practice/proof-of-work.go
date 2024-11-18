@@ -46,7 +46,7 @@ func main() {
 	data := "Hello, Unioeste!"
 
 	target := big.NewInt(1)
-	target.Lsh(target, 245) // This means 2^240, making it a relatively easy target
+	target.Lsh(target, 240) // This means 2^240, making it a relatively easy target
 
 	pow := Block{Data: data, Target: target}
 	start := time.Now()
