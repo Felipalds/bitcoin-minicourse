@@ -40,7 +40,7 @@ func (pow *Block) mine() {
 func main() {
 
 	data := "Hello, Unioeste!"
-	target := 4
+	target := 8
 
 	pow := Block{Data: data, Target: target}
 	start := time.Now()
