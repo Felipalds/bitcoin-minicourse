@@ -39,7 +39,9 @@ func (pow *Block) mine() {
 
 func main() {
 
-	data := "Hello, Unioeste!"
+	var data string
+	fmt.Scanf("%s", data)
+
 	target := 8
 
 	pow := Block{Data: data, Target: target}
