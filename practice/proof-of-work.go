@@ -4,7 +4,7 @@ import (
 	"crypto/sha256"
 	"encoding/hex"
 	"fmt"
-	"strings"
+	"math/big"
 	"time"
 )
 
@@ -12,7 +12,7 @@ import (
 
 type Block struct {
 	Data      string
-	Target    int
+	Target    *big.Int
 	Nonce     int
 	Hash      string
 	Timestamp time.Time
@@ -26,10 +26,15 @@ func calculateHash(data string, nonce int) string {
 
 // in golang, this is like a method
 func (pow *Block) mine() {
-	targetPrefix := strings.Repeat("0", pow.Target)
 	for {
 		pow.Hash = calculateHash(pow.Data, pow.Nonce)
-		if strings.HasPrefix(pow.Hash, targetPrefix) { // we found!
+
+		// Convert the hash to a big.Int to compare it with the target
+		var hashInt big.Int
+		hashInt.SetString(pow.Hash, 16)
+
+		// Check if the hash is less than the target
+		if hashInt.Cmp(pow.Target) == -1 { // hash < target
 			break
 		}
 		pow.Nonce++
@@ -38,9 +43,10 @@ func (pow *Block) mine() {
 }
 
 func main() {
-
 	data := "Hello, Unioeste!"
-	target := 8
+
+	target := big.NewInt(1)
+	target.Lsh(target, 240) // This means 2^240, making it a relatively easy target
 
 	pow := Block{Data: data, Target: target}
 	start := time.Now()
@@ -51,5 +57,4 @@ func main() {
 
 	fmt.Println("Completed mining")
 	fmt.Printf("Data: %s\nNonce: %d\nHash: %s\nTime Taken: %s\n", pow.Data, pow.Nonce, pow.Hash, duration)
-
 }
