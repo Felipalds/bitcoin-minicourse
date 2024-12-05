@@ -1,25 +1,28 @@
-# Bitcoin Fundamentals: From Theory to Practice  
+# Bitcoin Fundamentals: From Theory to Practice
 
-A beginner-friendly repository to learn the fundamentals of Bitcoin and blockchain technology. This project guides you from understanding basic concepts like hashes and cryptographic keys to implementing a simple blockchain and simulating transactions.  
+A beginner-friendly repository to learn the fundamentals of Bitcoin and blockchain technology. This project guides you from understanding basic concepts like hashes and cryptographic keys to implementing a simple blockchain and simulating transactions.
 
-## Features  
-- **Theoretical Overview**:  
-  - What is Bitcoin and why it matters.  
-  - Understanding blockchain, proof of work, and consensus mechanisms.  
-  - Basics of cryptographic keys and signatures.  
+## Bitcoin
+> A censorship-resistant money!
 
-- **Practical Applications**:  
+## Features
+- **Theoretical Overview**:
+  - What is Bitcoin and why it matters.
+  - Understanding blockchain, proof of work, and consensus mechanisms.
+  - Basics of cryptographic keys and signatures.
+
+- **Practical Applications**:
   - Principles of Bitcoin (Golang)
-  - Simulate transactions with digital signatures.  
-  - Explore hash functions and proof-of-work algorithms.  
+  - Simulate transactions with digital signatures.
+  - Explore hash functions and proof-of-work algorithms.
 
-## Getting Started  
+## Getting Started
 
-### Prerequisites  
-- Basic programming knowledge (Golang).  
+### Prerequisites
+- Basic programming knowledge (Golang).
 - Willingness to learn.
 
-### Installation  
+### Installation
    ```
    git clone https://github.com/<your-username>/bitcoin-fundamentals.git
    cd bitcoin-fundamentals
@@ -30,10 +33,10 @@ Follow the examples in the theory/ folder to understand core concepts.
 Explore the practice/ folder to experiment with blockchain and transactions.
 
 
-bitcoin-fundamentals/  
-├── theory/           # Theoretical content and explanations  
-├── practice/         # Practical examples and implementations  
-└── README.md         # Project documentation  
+bitcoin-fundamentals/
+├── theory/           # Theoretical content and explanations
+├── practice/         # Practical examples and implementations
+└── README.md         # Project documentation
 
 ## Contributing
 Contributions are welcome! Feel free to open issues or submit pull requests to improve the repository.
@@ -41,3 +44,4 @@ Contributions are welcome! Feel free to open issues or submit pull requests to i
 ## Acknowledgments
 Inspired by the [Bitcoin whitepaper](https://bitcoin.org/bitcoin.pdf) by Satoshi Nakamoto.
 Recommended book: [Mastering Bitcoin](https://github.com/bitcoinbook/bitcoinbook?tab=readme-ov-file) by Andreas M. Antonopoulos.
+Recommended game: [Saving Satoshi](https://savingsatoshi.com/)
