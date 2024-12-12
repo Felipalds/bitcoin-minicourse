@@ -45,3 +45,5 @@ Contributions are welcome! Feel free to open issues or submit pull requests to i
 Inspired by the [Bitcoin whitepaper](https://bitcoin.org/bitcoin.pdf) by Satoshi Nakamoto.
 Recommended book: [Mastering Bitcoin](https://github.com/bitcoinbook/bitcoinbook?tab=readme-ov-file) by Andreas M. Antonopoulos.
 Recommended game: [Saving Satoshi](https://savingsatoshi.com/)
+
+Link to generate key [here](https://iancoleman.io/bip39/)
